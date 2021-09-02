@@ -25,22 +25,58 @@
     <main>
         <form>
             <center><h1>Formulario de Prueba</h1></center>
-            <br /><label>Nombre</label><br />
-            <input name="txtNombre" maxlength="4" size="50" required placeholder="Digite nombre"></input><br />
+            <br /><label for="nombre">Nombre</label><br />
+            <!--el for y el id son iguales, y lo que hace es que  cuando le de click a nombre se vaya al input del nombre-->
+            <input name="txtNombre" id="nombre" maxlength="4" size="50" required placeholder="Digite nombre"></input><br />
             <label>Correo electronico</label><br />
             <input type="email" name="txtCorreio" size="40", placeholder="Digite Correo electronico"></input><br />
             <label>Numero de telefono</label><br />
             <input type="number" name=txtTelefono size="30" value="320123123" min=99999 max=999999999 ></input><br />
             <label>Fecha</label><br />
-            <input type="date" name="txtFecha"/><br /><br />
-            <input type="submit" value="Guardar datos"></input><br />
+            <input type="date" name="txtFecha"/><br />
+            <!--inputs de tipo de documento, y sexo m o f-->
+            <label>Tipo de documento </label>
+            <select name="txtTipoDocumento">
+                <option value=1>-------------</option>
+                <option value=2>Tarjeta de identidad</option>
+                <option value=3>Cedula</option>
+                <option value=4>Cedula de extranjeria</option>
+                <option value=5>Registro civil</option>
+            </select><br /><br /><br /><br />
+            <label>Observaciones</label>
+            <textarea name="txtObservaciones" cols="60" rows="5"></textarea><br />
+            <!--Boton-->
+            <input type="submit" value="Guardar datos"></input>
+            <button>entrar</button>
+
         </form>
+            <center><h1>Ejemplo de tabla</h1>
+                <table border=1>
+                    <tr><!--Filas-->
+                        <th>Equipo</th>
+                        <th>Ciudad</th>
+                        <th>Titulos NBA</th>
+                    </tr>
+                    <tr>
+                        <td>Lakers</td>
+                        <td>Los Angeles</td>
+                        <td>16</td>
+                    </tr>
+                    <tr>
+                        <td>Celtics</td>
+                        <td>Boston</td>
+                        <td>17</td>
+                    </tr>
+
+
+                </table>
+            </center>
      </main>
     <br />
     <br />
     <footer>
        <center>
-        <h3>pie de pagina</h3>
+        <h3 id="fuenteh3">pie de pagina</h3>
        </center> 
     </footer>
 

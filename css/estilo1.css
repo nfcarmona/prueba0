@@ -1,0 +1,13 @@
+body{
+    background-color: gainsboro;
+}
+h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:brown;
+    font-size: 200%;
+}
+p{
+    color:cadetblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 150%;
+}

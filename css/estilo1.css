@@ -1,13 +1,188 @@
 body{
-    background-color: gainsboro;
+    background-color: rgba(245, 243, 114, 0.404);
 }
-h1{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color:brown;
-    font-size: 200%;
-}
+
 p{
-    color:cadetblue;
+    color:rgb(1, 26, 27);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 150%;
+}
+
+#titulos_cajas{
+    color: black;
+}
+.diseños_cajas{
+    
+    color: rgba(0, 0, 0, 0.973);
+    width: 28%;
+    height: 30%;
+    background-color: rgba(245, 243, 114, 0.404);
+    display: inline-block;
+    border-style: solid;
+    margin: 0.5% 0.5% 0.5% 0.5%;
+    padding: 0.5% 0 0.5% 1%;
+    text-align: left;    
+}
+.titulos_cajas_class¨{
+    color:rgb(255, 255, 255);
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.diseño_boton{
+    background-color: seagreen;
+    color: white;
+    border-color: seagreen;
+    width: 150px;
+    height: 40px;
+    padding: 5px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.titulo-icono{
+    display: flex; /* Coloque las cajas que estan dentro del div en la misma linea*/
+    color: rgba(255, 255, 255, 0.979);
+    padding: 5px;
+}
+.caja-titulo{
+    width: 80%;
+    height: 60px;
+    background-color: navy;
+}
+.caja-icono{
+    width: 20%;
+    height: 60px;
+    background-color: orange;
+    text-align: center ;
+    padding: 20px 0 0 0;
+}
+.diseñoicono1{
+    font-size: 40px;
+    color: red;
+
+}
+.boton_caja{
+    /* ubicacion de la caja */
+    display: flex;
+    align-items: right ;
+    justify-content: right;
+}
+.formulario{
+    width: 50%;
+    margin:0 auto;
+    
+}
+.formulario_label{
+    display: inline-block;
+    width: 30%;
+
+}
+.formulario_input{
+    display: inline-block;
+    width: 60%;
+    margin: 5px;
+    border-radius: 2px;
+}
+.formulario_boton{
+    width: 30%;
+    height: 40px;
+    padding: 5px;
+    background-color:orange;
+    border-radius: 5px;
+    color: white;
+    border-color: orange;
+}
+.diseño_tabla{
+    width: 60%;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+th, td{
+    border: 1px solid black;
+
+}
+.menu ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+.menu li a{
+    display: block;
+    background-color: orange; 
+    color: white;
+    width: 200px;
+    height: 40px;
+    text-decoration: none;
+    text-align: center;
+    margin: 0 10px 0 0;
+    padding: 12px 0  0 0;
+}
+.boton_formulrio{
+    width: 30%;
+}
+.color0{
+    height: 250px;
+    background-color: darkorange;
+}
+.color1{
+    height: 250px;
+    background-color: rgb(94, 233, 59);
+}
+.color2{
+    height: 250px;
+    background-color: darkmagenta;
+}
+/*   Diseño tamaño de Celular   */
+/* si quisiera hacer el diseño tamaño tableta seria: @media(min-width:640px) and (max-width:1280px)*/
+
+@media(max-width:640px){
+    .menu ul{
+        display: block;
+    }
+    .menu li a{
+        display: block;
+        background-color: orange;
+        color: white;
+        width: 90%;
+        height: 40px;
+        text-decoration: solid;
+        text-align: center;
+        border-color: white;
+        margin-top: 10 px;
+
+    }
+    .formulario{
+        width: 90%;
+        margin:0 auto;
+        
+    }
+    .formulario_label{
+        display: inline-block;
+        width: 50%;
+        margin: 1px;
+    
+    }
+    .formulario_input{
+        display: inline-block;
+        width: 45%;
+        margin: 1px;
+        border-radius: 2px;
+    }
+    .formulario_boton{
+        width: 30%;
+        height: 40px;
+        padding: 1px;
+        
+    }
+    .diseño_tabla{
+        width: 60%;
+        border-collapse: collapse;
+        border: 1px solid black;
+    }
+    .diseños_cajas{      
+        width: 95%;       
+        display: block;
+          
+    }
+
 }

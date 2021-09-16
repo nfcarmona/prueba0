@@ -29,18 +29,18 @@
     <main>
         <form class="formulario">
             <center><h1>Formulario de Prueba</h1></center>
-            <br /><label class="formulario_label" for="nombre">Nombre</label>
+            <br /><label class="form-label" for="nombre">Nombre</label>
             <!--el for y el id son iguales, y lo que hace es que  cuando le de click a nombre se vaya al input del nombre-->
             <input class="formulario_input" name="txtNombre" id="nombre" maxlength="4" size="50" required placeholder="Digite nombre"></input><br />
-            <label class="formulario_label">Correo electronico</label>
+            <label class="form-label">Correo electronico</label>
             <input class="formulario_input"  type="email" name="txtCorreio" size="40", placeholder="Digite Correo electronico"></input><br />
-            <label class="formulario_label">Numero de telefono</label>
+            <label class="form-label">Numero de telefono</label>
             <input class="formulario_input"  type="number" name=txtTelefono size="30" value="320123123" min=99999 max=999999999 ></input><br />
-            <label class="formulario_label">Fecha</label>
+            <label class="form-label">Fecha</label>
             <input class="formulario_input"  type="date" name="txtFecha"/><br />
             <!--inputs de tipo de documento, y sexo m o f-- lmmedina@ucatolica. foto excelencia investigativa-->
-            <label class="formulario_label">Tipo de documento </label>
-            <select name="txtTipoDocumento">
+            <label >Tipo de documento </label>
+            <select class="tamaño select form-select form-select-lg mb-3" aria-label=".form-select-lg example" name="txtTipoDocumento">
                 <option value=1>-------------</option>
                 <option value=2>Tarjeta de identidad</option>
                 <option value=3>Cedula</option>
@@ -56,7 +56,7 @@
             </center>
 
         </form>
-            <center><h1 class="card">Ejemplo de tabla</h1>
+            <center><h1>Ejemplo de tabla</h1>
                 <table class="table"border=1>
                     <thead>
                     <tr><!--Filas-->
@@ -152,17 +152,17 @@
         
                 </a>
             </div>
-            <div class=" col-12 col-sm-6 col-md-6 col-xl-3" >
+            <div class=" alinear-header col-12 col-sm-6 col-md-4 col-xl-3" >
                 <CENter><h1>Naranjas G10</h1></CENter>
             </div>
 
-            <div class=" col-12 col-sm-6 col-md-3 col-xl-6">
-                <ul class="nav">
+            <div class=" col-12 col-sm-6 col-md-5 col-xl-6">
+                <ul class="nav nav-tabs">
                     <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#">Active</a>
+                      <a class="nav-link" aria-current="page" href="#">Active</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Link</a>
+                      <a class="nav-link active" href="#">Link</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="#">Link</a>
@@ -179,6 +179,95 @@
         </div>
 
     </div>
+    <br /><br /><br />
+    <form class="form-register">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-xl-4" >
+                    <label class="form-label" for="nombre">Nombre</label>
+                     <!--el for y el id son iguales, y lo que hace es que  cuando le de click a nombre se vaya al input del nombre-->
+                    <input class="form-control" name="txtNombre" id="nombre" maxlength="4" required placeholder="Digite nombre"></input>
+
+                </div>
+                <div class="col-12 col-md-6 col-xl-4" >
+                    <label class="form-label">Correo electronico</label>
+                    <input class="form-control"  type="email" name="txtCorreio" , placeholder="Digite Correo electronico"></input>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4">
+                    <br /><label class="form-label">Numero de telefono</label>
+                    <input class="form-control"  type="number" name=txtTelefono size="30" min=99999 max=999999999 ></input>
+
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <label class="form-label">Fecha</label>
+                    <input class="form-control"  type="date" name="txtFecha"/>
+                </div>
+                <div class="col-12 col-md-8 col-xl-6">
+                    <label class="form-label" >Tipo de documento </label>
+                    <select class="form-select" aria-label=".form-select-lg example" name="txtTipoDocumento">
+                        <option value=1>-------------</option>
+                        <option value=2>Tarjeta de identidad</option>
+                        <option value=3>Cedula</option>
+                        <option value=4>Cedula de extranjeria</option>
+                        <option value=5>Registro civil</option>
+                    </select>
+                </div>
+
+
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <button type="button" class="btn btn-outline-danger">Guardar</button>
+                </div>
+                <div class="col-12 col-md-6" >
+                    <button type="button" class="btn btn-outline-danger">Cancelar</button>
+                </div>   
+
+            </div>
+                                                                                                                            
+        </div>
+    </form>
+    <br /><br /><br /><br /><br /><br />
+    
+    <div class="container">
+        <div class="row">
+            <div class="table-responsive">
+                <table>
+                    <table class="table table-danger table-striped table-hover ">
+                        <thead class="table-danger">
+                        <tr><!--Filas-->
+                            
+                            <th scope="col">Equipo</th>
+                            <th scope="col">Ciudad</th>
+                            <th scope="col">Titulos NBA</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Lakers</td>
+                            <td>Los Angeles</td>
+                            <td>16</td>
+                        </tr>
+                        <tr>
+                            <td>Celtics</td>
+                            <td>Boston</td>
+                            <td>17</td>
+                        </tr>
+                    </tbody>
+    
+                    </table>  
+                </table>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
     <br /><br /><br />
 </body>
 </html>

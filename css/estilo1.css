@@ -121,16 +121,28 @@ th, td{
     width: 30%;
 }
 .color0{
-    height: 250px;
+    
     background-color: darkorange;
 }
 .color1{
-    height: 250px;
+    
     background-color: rgb(94, 233, 59);
 }
 .color2{
-    height: 250px;
+    
     background-color: darkmagenta;
+} 
+.tamaño select{
+    width: 30% !important;
+}
+.row{
+    margin-bottom: 20px;
+}
+.btn{
+    width: 100%;
+}
+.alinear-header{
+    padding-top: 70px;
 }
 /*   Diseño tamaño de Celular   */
 /* si quisiera hacer el diseño tamaño tableta seria: @media(min-width:640px) and (max-width:1280px)*/

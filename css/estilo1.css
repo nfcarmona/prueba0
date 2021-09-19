@@ -144,6 +144,10 @@ th, td{
 .alinear-header{
     padding-top: 70px;
 }
+.carousel{
+    width: 50%;
+    height: 70%;
+}
 /*   Diseño tamaño de Celular   */
 /* si quisiera hacer el diseño tamaño tableta seria: @media(min-width:640px) and (max-width:1280px)*/
 

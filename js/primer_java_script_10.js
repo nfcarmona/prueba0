@@ -75,3 +75,76 @@ do{
     document.write("<br/><br/><p class='fs-4'>La k va en el numero: "+k+"</p>")  
     k+=4
 }while(k<15);
+
+//Definir la Función
+/*function sumar(numero1,numero2){
+    var resultado=numero1+numero2;
+    alert("Resultado: "+ resultado);
+    return resultado;
+}
+
+var resultado2=sumar(52,353);
+alert("Resultado2: "+resultado2);
+
+
+ */
+function sumar(){
+    var numero1_formulario=document.getElementById("numero1").value;
+    
+    var numero2_formulario=document.getElementById("numero2").value;
+    var resultado= parseInt(numero1_formulario)+parseInt(numero2_formulario);
+
+    alert("la sumatoria es: "+ resultado);
+    
+}
+var pruebas_cadenas_texto="Pepito Perez";
+/*alert("convertir en mayusculas"+ pruebas_cadenas_texto.toUpperCase)
+alert("convertir en minusculas"+ pruebas_cadenas_texto.toLowerCase)
+alert*/
+
+// Variable de tipo Global
+var prueba1=1;
+
+function realizar_operaciones_matematicas(){
+    
+    //Variable de tipo local
+    var prueba2=2; 
+
+    //alert("Ingreso a realizar_operaciones_matematicas");
+    //multiplicar();
+    sumar();
+    //restar();
+
+    function sumar(){
+        var numero1_formulario=document.getElementById("numero1").value;
+        var numero2_formulario=document.getElementById("numero2").value;
+        var resultado_multiplicar= parseInt(numero1_formulario) + parseInt(numero2_formulario);
+        alert("Resultado de suma: "+ resultado_multiplicar);
+        
+        var boton_sumar=document.getElementById("boton_sumar");
+        boton_sumar.setAttribute("class","btn btn-warning");
+
+    }
+    function restar(){
+        var numero1_formulario=document.getElementById("numero1").value;
+        var numero2_formulario=document.getElementById("numero2").value;
+        var resultado_multiplicar= parseInt(numero1_formulario) - parseInt(numero2_formulario);
+        alert("Resultado de resta: "+ resultado_multiplicar);
+
+
+    }
+    function multiplicar(){
+        var numero1_formulario=document.getElementById("numero1").value;
+        var numero2_formulario=document.getElementById("numero2").value;
+        var resultado_multiplicar= parseInt(numero1_formulario) * parseInt(numero2_formulario);
+        alert("Resultado Multiplicar: "+ resultado_multiplicar);
+
+    }
+}
+
+realizar_operaciones_matematicas();
+
+var crer_etiqueta_h2=document.createElement("h2");
+var contenido_h2=document.createTextNode("Este es un texto Dinamico");
+crer_etiqueta_h2.appendChild(contenido_h2);
+document.getElementById("div_dinamico").appendChild(crer_etiqueta_h2);
